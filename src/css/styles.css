@@ -1219,3 +1219,50 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
       text-align: center;
   }
 }
+/* --- LEGAL PAGES STYLES --- */
+.pages {
+  padding: 160px 0 100px;
+  min-height: 80vh;
+}
+
+.pages h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5vw, 48px);
+  margin-bottom: 40px;
+  color: var(--color-accent);
+}
+
+.pages h2 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  margin: 40px 0 20px;
+  color: var(--color-white);
+}
+
+.pages p {
+  margin-bottom: 20px;
+  color: var(--color-text-muted);
+  font-size: 16px;
+  max-width: 800px;
+}
+
+.pages ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.pages ul li {
+  margin-bottom: 12px;
+  color: var(--color-text-muted);
+  position: relative;
+  list-style-type: disc;
+}
+
+.pages ul li::marker {
+  color: var(--color-accent);
+}
+
+/* Корректировка адреса в футере под Францию (из начального ТЗ) */
+.footer__contact-item span, .footer__contact-item a {
+  transition: var(--transition);
+}
