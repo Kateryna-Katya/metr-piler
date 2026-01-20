@@ -1,19 +1,36 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__text">Metr<span class="logo__dot">.</span>Piler</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">О платформе</a></li>
+              <li class="nav__item"><a href="#courses" class="nav__link">Курсы</a></li>
+              <li class="nav__item"><a href="#tech" class="nav__link">Технологии</a></li>
+              <li class="nav__item"><a href="#blog" class="nav__link">База знаний</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать</a>
+          <button class="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__container">
+      <nav class="mobile-menu__nav">
+          <a href="#" class="mobile-menu__link">Главная</a>
+          <a href="#about" class="mobile-menu__link">О платформе</a>
+          <a href="#courses" class="mobile-menu__link">Курсы</a>
+          <a href="#tech" class="mobile-menu__link">Технологии</a>
+          <a href="#blog" class="mobile-menu__link">База знаний</a>
+          <a href="#contact" class="btn btn--primary mobile-menu__btn">Начать</a>
+      </nav>
+  </div>
+</div>
